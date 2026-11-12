@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <base-config cleartextTrafficPermitted="false" />
+    <!-- Apple's recovery endpoints are plain HTTP (same as macrecovery.py). -->
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">osrecovery.apple.com</domain>
+        <domain includeSubdomains="true">oscdn.apple.com</domain>
+        <domain includeSubdomains="true">apple.com</domain>
+    </domain-config>
+</network-security-config>
